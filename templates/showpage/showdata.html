@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1><center>Resume<center></h1>
+<form action="" method="post">
+<center>
+<table border="1" height="600" width="300">
+    <tr>
+        {% for i in data %}
+<td colspan="2"><b>Name:</b></td>
+<td colspan="2">{{ i.0 }}&nbsp;{{ i.1 }} </td>
+</tr>
+<tr>
+<td colspan="2"><b>Email id:</b></td>
+<td colspan="2">{{ i.2 }}</td>
+</tr>
+<tr>
+<td colspan="2"><b>Address:</b></td>
+<td colspan="2">{{ i.3 }}</td>
+
+</tr>
+    <tr>
+<td colspan="2">Contact No:</td>
+<td colspan="2">{{ i.4 }}</td>
+
+</tr>
+    <tr>
+<td colspan="2">Education:</td>
+<td colspan="2">{{ i.5 }}</td>
+
+</tr>
+    <tr>
+<td colspan="2">Work Experince:</td>
+<td colspan="2">{{ i.6 }}</td>
+{% endfor %}
+</tr>
+
+</table>
+    </center>
+</body>
+<input type="submit" name="submit" formaction="get" value="exit" >
+</form>
+</html>
